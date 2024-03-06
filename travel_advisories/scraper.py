@@ -32,7 +32,8 @@ class TravelAdvisory:
         else:
             print("Error:", response.status_code)
             
-        return TravelAdvisory.clean_content(return_list)
+        ret = TravelAdvisory.clean_content(return_list)
+        return ret
     
     
     @staticmethod
